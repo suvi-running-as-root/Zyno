@@ -1,3 +1,35 @@
+# Node modules
+*/node_modules/
+node_modules/
+
+# Python virtual environment
 venv/
+.env/
 __pycache__/
+
+
+# Build files
+dist/
+build/
+
+# Logs and system files
+*.log
+*.DS_Store
+
+# IDE settings
+.vscode/
+.idea/
+
+# Python cache
 *.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Frontend environment
+Music-Recommendation-App/.env
+
+# Output files
+*.zip
+*.tar
+*.tar.gz

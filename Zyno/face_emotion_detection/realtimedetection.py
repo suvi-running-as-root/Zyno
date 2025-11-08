@@ -10,10 +10,10 @@ import time  # Import the time module
 # Dynamically set the model path based on the environment
 if platform.system() == "Windows":
     # Use Windows-style path for local development
-    DEFAULT_MODEL_PATH = r"C:\Users\Vishwanath BK\ScrumProject\FER\Zyno\face_emotion_detection\best_model.h5"
+    DEFAULT_MODEL_PATH = r"C:\Users\Vishwanath BK\ScrumProject\FER\Zyno\face_emotion_detection\emotiondetector.keras"
 else:
     # Use Linux-style path for Docker or other environments
-    DEFAULT_MODEL_PATH = "/app/backend/face_emotion_detection/best_model.h5"
+    DEFAULT_MODEL_PATH = "/app/backend/face_emotion_detection/emotiondetector.keras"
 
 # Use environment variable for the model path (if set), or fall back to the default
 MODEL_PATH = os.getenv("MODEL_PATH", DEFAULT_MODEL_PATH)
