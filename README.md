@@ -38,30 +38,34 @@ Zyno combines three main components:
 ---
 
 ## ⚙️ Project Structure
-
+```
 ScrumProject/
-│
 ├── FER/
 │ └── Zyno/
-│ └── Music-Recommendation-App/ # React frontend
-│ ├── src/
-│ ├── public/
-│ ├── package.json
-│ └── ...
-│
-├── FER/
-│ └── Zyno/
+│ ├── Music-Recommendation-App/ # React frontend
+│ │ ├── src/ # React source files
+│ │ ├── public/ # Public assets (songs, images, etc.)
+│ │ ├── package.json # NPM package configuration
+│ │ ├── package-lock.json
+│ │ ├── tailwind.config.js
+│ │ ├── postcss.config.js
+│ │ ├── next.config.js
+│ │ ├── README.md
+│ │ └── ... # Other frontend files
+│ │
 │ └── face_emotion_detection/ # Flask backend
-│ ├── backend.py
-│ ├── realtimedetection.py
-│ ├── models/
-│ ├── requirements.txt
-│ └── ...
+│ ├── backend.py # Main Flask app
+│ ├── realtimedetection.py # Real-time detection script
+│ ├── models/ # ML models directory
+│ ├── requirements.txt # Python dependencies
+│ └── ... # Other backend files
 │
 └── ...
-
-yaml
+```
 Copy code
+
+
+
 
 ---
 
@@ -97,6 +101,7 @@ Copy code
 # Example inside realtimedetection.py
 
 # Choose between available models
+(example)
 model_1 = 'models/emotion_cnn.h5'
 model_2 = 'models/emotion_vgg.h5'
 model_3 = 'models/emotion_mobilenet.h5'
